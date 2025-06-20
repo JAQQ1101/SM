@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Churrascaria de São Martinho | O Sabor Autêntico</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="header-trigger"></div>
+
+  <header id="pageHeader">
+    <div class="header-left">
+      <div class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+    <div class="logo">Churrascaria de São Martinho</div>
+    <div class="header-right"></div>
+  </header>
+
+  <nav id="mainNav">
+    <a href="#sobrenos">Sobre Nós</a>
+    <a href="#localizacao">Localização</a>
+    <a href="#eventos">Eventos</a>
+    <a href="#vinhos">Vinhos</a> 
+    <a href="assets/menu.html" target="_blank">Menu Completo</a> 
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <video playsinline autoplay muted loop poster="assets/img00.png" class="hero-video-background">
+          <source src="assets/video1.mp4" type="video/mp4">
+          <source src="assets/video1.webm" type="video/webm">
+          O seu navegador não suporta vídeos HTML5.
+      </video>
+      <div class="hero-content">
+        <h1>Sabores Autênticos</h1>
+        <p>Desfrute da melhor churrascaria com o toque tradicional e moderno que nos caracteriza.</p>
+        <a href="#" id="openModalBtn" class="btn btn-reserva">Reservar Mesa</a>
+      </div>
+    </section>
+
+    <section id="sobrenos" class="section content-block">
+      <div class="container">
+        <h2 class="section-title">Sobre Nós</h2>
+        <div class="about-grid">
+          <div class="text-content anim-reveal"><p>Bem-vindo à Churrascaria de São Martinho, um tesouro culinário no coração do Funchal. Nascido da paixão pelas tradições da Madeira e pelo sabor autêntico do churrasco, o nosso restaurante é um ponto de encontro para famílias e amigos.</p></div>
+          <div class="image-content anim-reveal"><img src="assets/img00.png" alt="Cozinheiro a preparar comida" loading="lazy"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="video-section content-block">
+        <video playsinline autoplay muted loop poster="assets/sala1.jpg" class="video-section-background">
+            <source src="assets/video2.mp4" type="video/mp4">
+            O seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="video-section-overlay"></div>
+        <div class="video-section-content">
+            <h2 class="section-title anim-reveal">Onde Estamos</h2>
+            <p class="anim-reveal">Encontre o nosso refúgio gastronómico na tranquila freguesia de São Martinho, a poucos minutos do coração do Funchal.</p>
+        </div>
+    </section>
+
+    <section id="menulink" class="section content-block">
+      <div class="container text-center">
+        <h2 class="section-title anim-reveal">O Nosso Menu</h2>
+        <p class="anim-reveal">Explore a nossa seleção completa de pratos, bebidas e sobremesas. Deixe-se tentar pelos sabores.</p>
+        <a href="assets/menu.html" target="_blank" class="btn btn-primary anim-reveal">Ver Menu Completo</a>
+      </div>
+    </section>
+    
+    <section id="eventos" class="section content-block">
+        <div class="container text-center">
+            <h2 class="section-title anim-reveal">Eventos e Celebrações</h2>
+            <p class="anim-reveal" style="max-width: 800px; margin: 0 auto 3rem auto;">Descubra o nosso espaço exclusivo no último piso, o local perfeito para as suas celebrações mais especiais. Com uma sala ampla e um terraço privado com vistas deslumbrantes, o nosso espaço é ideal para festas de aniversário, batizados, primeiras comunhões e outros eventos. Ofereça aos seus convidados uma experiência inesquecível.</p>
+            
+            <div class="event-carousel-wrapper anim-reveal">
+                <button class="carousel-arrow prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                <div class="event-carousel" id="eventCarousel">
+                    <div class="carousel-slide" data-slide-index="0">
+                        <img src="assets/sala1.jpg" alt="Sala de eventos interior" loading="lazy">
+                    </div>
+                    <div class="carousel-slide" data-slide-index="1">
+                        <img src="assets/sala2.jpg" alt="Terraço da sala de eventos com vista" loading="lazy">
+                    </div>
+                </div>
+                <button class="carousel-arrow next" aria-label="Siguiente"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots" id="carouselDots"></div>
+            </div>
+
+            <a href="mailto:reservas@churrascariadesao.com?subject=Reserva de Sala para Evento" class="btn btn-primary anim-reveal" style="margin-top: 3rem;">Reservar Sala</a>
+        </div>
+    </section>
+
+    <section id="vinhos" class="video-section content-block">
+        <video playsinline autoplay muted loop poster="assets/sala2.jpg" class="video-section-background">
+            <source src="assets/vinho1.mp4" type="video/mp4">
+            O seu navegador não suporta vídeos HTML5.
+        </video>
+        <div class="video-section-overlay"></div>
+        <div class="video-section-content">
+            <h2 class="section-title anim-reveal">A Nossa Garrafeira</h2>
+            <p class="anim-reveal">Uma seleção cuidada de vinhos que representam o melhor das regiões de Portugal, escolhidos para harmonizar perfeitamente com os nossos pratos.</p>
+            <a href="assets/vinhos.html" target="_blank" class="btn btn-primary anim-reveal" style="margin-top: 2rem;">Carta de Vinhos</a>
+        </div>
+    </section>
+
+    <section id="menu" class="content-block">
+        <div class="menu-showcase-panel">
+            <div class="panel-bg-parallax" style="background-image: url('assets/img10.png');"></div>
+            <div class="panel-content"><h2>Espetada</h2><p>A autêntica espetada madeirense em pau de louro.</p></div>
+        </div>
+        <div class="menu-showcase-panel">
+            <div class="panel-bg-parallax" style="background-image: url('assets/img2.png');"></div>
+            <div class="panel-content"><h2>Picanha</h2><p>Corte nobre, grelhado à perfeição para máxima suculência.</p></div>
+        </div>
+        <div class="menu-showcase-panel">
+            <div class="panel-bg-parallax" style="background-image: url('assets/img4.png');"></div>
+            <div class="panel-content"><h2>Frango Assado</h2><p>Frango de churrasco com o nosso tempero secreto.</p></div>
+        </div>
+        <div class="menu-showcase-panel">
+            <div class="panel-bg-parallax" style="background-image: url('assets/img1.png');"></div>
+            <div class="panel-content"><h2>Entrecosto</h2><p>Costelinhas de porco assadas lentamente com molho barbecue.</p></div>
+        </div>
+        <div class="menu-showcase-panel">
+            <div class="panel-bg-parallax" style="background-image: url('assets/img3.png');"></div>
+            <div class="panel-content"><h2>Acompanhamentos</h2><p>O nossos acompanhamentos.</p></div>
+        </div>
+    </section>
+      
+  </main>
+  
+  <footer id="pageFooterBottom">
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contacto-info">
+            <p>Caminho Igreja Nova 5, Funchal</p>
+            <p><strong>Horário:</strong> 12:00 – 23:00</p>
+            <p><strong>Telefone:</strong> +351 123 456 789</p>
+            </div>
+        </div>
+    </section>
+    <div class="footer-bottom">
+        <div class="container">
+            <p>&copy; 2025 Churrascaria de São Martinho - Todos os direitos reservados</p>
+        </div>
+    </div>
+  </footer>
+
+  <div id="reservationModal" class="modal-overlay">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 class="modal-title">Reservar Mesa</h2>
+        <p class="modal-subtitle">Garanta o seu lugar no paraíso do sabor.</p>
+        <form id="reservationForm">
+            <div class="form-group">
+                <label for="guestName">Nome</label>
+                <input type="text" id="guestName" name="guestName" required>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="reservationDate">Data</label>
+                    <input type="date" id="reservationDate" name="reservationDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="reservationTime">Hora</label>
+                    <input type="time" id="reservationTime" name="reservationTime" required>
+                </div>
+            </div>
+            <div class="form-group-inline">
+                <div class="form-group">
+                    <label for="guestCount">Nº de Pessoas</label>
+                    <input type="number" id="guestCount" name="guestCount" min="1" max="20" value="2" required>
+                </div>
+                <div class="form-group">
+                    <label for="tableSelect">Mesa Disponível</label>
+                    <select id="tableSelect" name="tableSelect" required>
+                        <option value="" disabled selected>Escolha uma mesa</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary modal-btn">Confirmar Reserva</button>
+        </form>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal-overlay">
+    <div class="success-content">
+        <svg class="checkmark-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+            <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+            <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+        </svg>
+        <h2 class="modal-title">Reserva Efetuada!</h2>
+        <p class="modal-subtitle">Obrigado! A sua mesa está à sua espera.</p>
+    </div>
+  </div>
+
+
+ <script>
+ document.addEventListener('DOMContentLoaded', () => {
+    // --- DADOS REAIS DAS MESAS ---
+    const restaurantTables = [
+        { id: '100', capacity: 2, location: 'Interior' }, { id: '122', capacity: 4, location: 'Interior' },
+        { id: '123', capacity: 4, location: 'Interior' }, { id: '119', capacity: 2, location: 'Interior' },
+        { id: '120', capacity: 4, location: 'Interior' }, { id: '121', capacity: 4, location: 'Interior' },
+        { id: '113', capacity: 2, location: 'Interior' }, { id: '114', capacity: 2, location: 'Interior' },
+        { id: '116', capacity: 4, location: 'Interior' }, { id: '118', capacity: 6, location: 'Interior' },
+        { id: '124', capacity: 4, location: 'Esplanada' }, { id: '125', capacity: 2, location: 'Esplanada' },
+        { id: '126', capacity: 2, location: 'Esplanada' }, { id: '101', capacity: 2, location: 'Esplanada' },
+        { id: '102', capacity: 2, location: 'Esplanada' }, { id: '103', capacity: 2, location: 'Esplanada' },
+        { id: '104', capacity: 2, location: 'Esplanada' }, { id: '105', capacity: 2, location: 'Esplanada' }
+    ];
+
+   // --- LÓGICA GERAL DA PÁGINA (SCROLL, MENU, ANIMAÇÕES) ---
+   const pageHeader = document.getElementById('pageHeader');
+   const mainNav = document.getElementById('mainNav');
+   const menuToggle = document.getElementById('menuToggle');
+   
+   const headerTrigger = document.createElement('div');
+   headerTrigger.style.position = 'absolute';
+   headerTrigger.style.top = '100px';
+   document.body.prepend(headerTrigger);
+
+   const headerObserver = new IntersectionObserver((entries) => {
+     if (!entries[0].isIntersecting) {
+       pageHeader.classList.add('scrolled');
+     } else {
+       pageHeader.classList.remove('scrolled');
+     }
+   }, { threshold: 1.0 });
+   headerObserver.observe(headerTrigger);
+
+   const elementsToBlur = document.querySelectorAll('.content-block, .hero, #pageFooterBottom');
+   const toggleMenu = () => {
+     const isOpened = menuToggle.classList.toggle('active');
+     mainNav.classList.toggle('active');
+     document.body.classList.toggle('no-scroll', isOpened);
+     elementsToBlur.forEach(el => el.classList.toggle('is-blurred', isOpened));
+     pageHeader.classList.toggle('is-blurred', isOpened);
+   };
+   menuToggle.addEventListener('click', toggleMenu);
+   
+   mainNav.querySelectorAll('a').forEach(link => {
+     link.addEventListener('click', () => {
+       if (mainNav.classList.contains('active')) toggleMenu();
+     });
+   });
+
+   document.addEventListener('keydown', e => {
+     if (e.key === "Escape" && mainNav.classList.contains('active')) toggleMenu();
+   });
+
+   const revealObserver = new IntersectionObserver((entries) => {
+     entries.forEach(entry => {
+       if (entry.isIntersecting) {
+         entry.target.classList.add('is-visible');
+         revealObserver.unobserve(entry.target);
+       }
+     });
+   }, { threshold: 0.15 });
+   document.querySelectorAll('.anim-reveal').forEach(el => revealObserver.observe(el));
+
+   // --- LÓGICA DO CARRUSEL DE EVENTOS ---
+   const carousel = document.getElementById('eventCarousel');
+   if (carousel) {
+     const dotsContainer = document.getElementById('carouselDots');
+     const slides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+     const prevButton = document.querySelector('.carousel-arrow.prev');
+     const nextButton = document.querySelector('.carousel-arrow.next');
+     
+     slides.forEach((slide, index) => {
+       const dot = document.createElement('span');
+       dot.classList.add('carousel-dot');
+       dot.dataset.index = index;
+       if (index === 0) dot.classList.add('active');
+       dotsContainer.appendChild(dot);
+     });
+
+     const dots = dotsContainer.querySelectorAll('.carousel-dot');
+     
+     const updateDotsOnScroll = () => {
+       const scrollLeft = carousel.scrollLeft;
+       const slideWidth = carousel.offsetWidth;
+       const activeIndex = Math.round(scrollLeft / slideWidth);
+       dots.forEach(dot => {
+         dot.classList.toggle('active', parseInt(dot.dataset.index) === activeIndex);
+       });
+     };
+     carousel.addEventListener('scroll', updateDotsOnScroll);
+
+     const scrollToSlide = (index) => {
+       const slideWidth = carousel.offsetWidth;
+       carousel.scrollTo({ left: index * slideWidth, behavior: 'smooth' });
+     };
+
+     dots.forEach(dot => {
+       dot.addEventListener('click', (e) => {
+         e.preventDefault();
+         scrollToSlide(parseInt(dot.dataset.index));
+       });
+     });
+
+     prevButton.addEventListener('click', (e) => {
+       e.preventDefault();
+       const slideWidth = carousel.offsetWidth;
+       let newScrollLeft = Math.round(carousel.scrollLeft) - slideWidth;
+       carousel.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+     });
+
+     nextButton.addEventListener('click', (e) => {
+       e.preventDefault();
+       const slideWidth = carousel.offsetWidth;
+       let newScrollLeft = Math.round(carousel.scrollLeft) + slideWidth;
+       carousel.scrollTo({ left: newScrollLeft, behavior: 'smooth' });
+     });
+   }
+
+   // --- LÓGICA DO MODAL DE RESERVA (COM DADOS REAIS E FILTRO) ---
+   const reservationModal = document.getElementById('reservationModal');
+   if (reservationModal) {
+     const successModal = document.getElementById('successModal');
+     const openModalBtn = document.getElementById('openModalBtn');
+     const closeModalBtn = reservationModal.querySelector('.close-modal');
+     const reservationForm = document.getElementById('reservationForm');
+     const dateInput = document.getElementById('reservationDate');
+     const guestCountInput = document.getElementById('guestCount');
+     const tableSelect = document.getElementById('tableSelect');
+
+     // Función para popular as mesas segundo o número de pessoas
+     const populateTables = (guestCount) => {
+        tableSelect.innerHTML = ''; // Limpar opções anteriores
+
+        // Filtrar mesas por capacidade
+        const availableTables = restaurantTables.filter(table => table.capacity >= guestCount);
+
+        if (availableTables.length === 0) {
+            tableSelect.innerHTML = '<option value="" disabled selected>Não há mesas para essa capacidade</option>';
+            return;
+        }
+
+        tableSelect.innerHTML = '<option value="" disabled selected>Escolha uma mesa</option>';
+
+        // Agrupar por localização
+        const groupedTables = availableTables.reduce((acc, table) => {
+            (acc[table.location] = acc[table.location] || []).push(table);
+            return acc;
+        }, {});
+
+        for (const location in groupedTables) {
+            const optgroup = document.createElement('optgroup');
+            optgroup.label = location;
+            groupedTables[location].forEach(table => {
+                const option = document.createElement('option');
+                option.value = table.id;
+                option.textContent = `Mesa ${table.id} (até ${table.capacity} pessoas)`;
+                optgroup.appendChild(option);
+            });
+            tableSelect.appendChild(optgroup);
+        }
+     };
+
+     const openModal = () => {
+        const currentGuests = parseInt(guestCountInput.value, 10);
+        populateTables(currentGuests);
+        reservationModal.style.display = 'flex';
+     };
+     const closeModal = () => reservationModal.style.display = 'none';
+
+     if(openModalBtn) openModalBtn.addEventListener('click', (e) => {
+       e.preventDefault();
+       openModal();
+     });
+     if(closeModalBtn) closeModalBtn.addEventListener('click', closeModal);
+     
+     reservationModal.addEventListener('click', (e) => {
+       if(e.target === reservationModal) closeModal();
+     });
+
+     // Atualizar a lista de mesas quando o número de pessoas muda
+     guestCountInput.addEventListener('input', () => {
+        const currentGuests = parseInt(guestCountInput.value, 10);
+        populateTables(currentGuests);
+     });
+
+     // Setea la fecha mínima a hoy
+     if (dateInput) {
+       const today = new Date().toISOString().split('T')[0];
+       dateInput.setAttribute('min', today);
+     }
+
+     if(reservationForm) {
+       reservationForm.addEventListener('submit', (e) => {
+         e.preventDefault();
+         if (!tableSelect.value) {
+             alert("Por favor, escolha uma mesa disponível.");
+             return;
+         }
+         closeModal();
+         successModal.style.display = 'flex';
+         setTimeout(() => {
+           successModal.style.display = 'none';
+         }, 4000); 
+       });
+     }
+   }
+
+ });
+ </script>
+ 
+</body>
+</html>
